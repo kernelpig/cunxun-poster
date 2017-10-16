@@ -1,5 +1,5 @@
 http://www.lunxue.cc/index.html
-http://www.lunxue.cc/news_list.html?column_id=1&page_size=10&page_num=1
-http://www.lunxue.cc/postbar_list.html?column_id=2&page_size=10&page_num=1
-http://www.lunxue.cc/rental_list.html?column_id=3&page_size=10&page_num=1
-http://www.lunxue.cc/carpooling_list.html?column_id=4&page_size=10&page_num=1
+http://www.lunxue.cc/news_list.html?column_id=1&page_size=50&page_num=1
+http://www.lunxue.cc/postbar_list.html?column_id=2&page_size=50&page_num=1
+http://www.lunxue.cc/rental_list.html?column_id=3&page_size=50&page_num=1
+http://www.lunxue.cc/carpooling_list.html?column_id=4&page_size=50&page_num=1

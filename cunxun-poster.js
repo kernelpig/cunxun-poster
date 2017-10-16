@@ -69,6 +69,8 @@ function getAjaxPage(url, render, res) {
             }
             console.log(endFlag);
         }
+	    page.clearMemoryCache();
+	    page.release();
     });
 }
 

@@ -1,0 +1,1 @@
+curl -H 'Content-Type:text/plain' --data-binary @urls.txt "http://data.zz.baidu.com/urls?site=[YOUR_WEBSITE]&token=[YOUR_WEBSITE_BAIDU_TOKEN]" >> log.txt

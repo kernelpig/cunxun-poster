@@ -55,7 +55,6 @@ function getAjaxPage(url, render, res) {
     var remoteUrl = remoteServer + url;
     console.log(url, " -> ", remoteUrl, ": ", getContentType(url));
     page = webpage.create();
-    //page.content = page.frameContent = "";  // 清空初始化数据
     page.open(remoteUrl, function (status) {
         if (status !== 'success') {
             console.log("Failed to get url: ", remoteUrl);

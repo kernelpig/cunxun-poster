@@ -26,6 +26,21 @@ var subfixMap = {
     "js": "application/x-javascript"
 };
 
+// 获取系统当前时间
+function getCurrentDate() {
+    var dtCur = new Date();
+    var yearCur = dtCur.getFullYear();
+    var monCur = dtCur.getMonth() + 1;
+    var dayCur = dtCur.getDate();
+    var hCur = dtCur.getHours();
+    var mCur = dtCur.getMinutes();
+    var sCur = dtCur.getSeconds();
+    var timeCur = yearCur + "-" + (monCur < 10 ? "0" + monCur : monCur) + "-"
+        + (dayCur < 10 ? "0" + dayCur : dayCur) + " " + (hCur < 10 ? "0" + hCur : hCur)
+        + ":" + (mCur < 10 ? "0" + mCur : mCur) + ":" + (sCur < 10 ? "0" + sCur : sCur);
+    return timeCur;
+}
+
 // 获取url中的文件名
 function getFileName(path) {
     var tmp = path.split("/");
@@ -53,7 +68,7 @@ function getAjaxPage(url, render, res) {
     console.log("+ begin render ajax page.");
     url = url.replace(caddyRewritePrefix, "");
     var remoteUrl = remoteServer + url;
-    console.log(url, " -> ", remoteUrl, ": ", getContentType(url));
+    console.log("[" + getCurrentDate() + "] ", url, " -> ", remoteUrl, ": ", getContentType(url));
     page = webpage.create();
     page.open(remoteUrl, function (status) {
         if (status !== 'success') {
